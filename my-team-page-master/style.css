@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+}
+
+#heading {
+    font-family: PT Serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    margin-top: 71px;
+}
+
+#subheading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p#intro {
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    display: block;
+}
+
+.card {
+    float: left;
+    position: relative;
+}
+
+.name {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.job {
+    font-family: PT Serif;
+    font-size: 10px;
+    left: calc(90% + 15px);
+    line-height: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    width: 100%;    
+}
+
+footer p {
+    color: #A9A9A9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+footer span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    #heading {
+        display: block;
+        margin: 71px 0 0 12px;
+    }
+
+    #subheading {
+        line-height: 27px;
+        margin: 37px 30px 0 12px;
+
+    }
+
+    p#intro {
+        margin: 10px 0px 50px 12px;
+        width: 375px;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .name {
+        margin-left: auto;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 20%;
+    }
+
+    .card:nth-child(odd) {
+        margin-bottom: 20%;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    #header  {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #heading {
+        height: 48px;
+        width: 50%;
+    }
+
+    #subheading {
+        height: 48px;
+        line-height: 48px;
+        margin-top: 71px;
+        width: 50%;
+    }
+
+    p#intro {
+        margin-left: 50%;
+        width: 50%;
+        height: 63px;  
+    }
+
+    #gallery {
+        justify-content: space-between;
+        margin: 50px auto 0 auto; 
+        width: 70%;
+    }
+
+    img {
+        margin-left: 0;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .name {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card:nth-child(2), .card:nth-child(5) {
+        margin-top: 10%;
+    }
+
+    .card:nth-child(odd) {
+        margin-bottom: 10%;
+    }
+}
